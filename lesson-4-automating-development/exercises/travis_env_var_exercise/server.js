@@ -1,12 +1,11 @@
-const favoriteInstructor = process.env.INSTRUCTOR;
+
 function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function main() {
-  while (true) {
+  while(true) {
     console.log("Microservices rock!");
-
     await sleep(5000);
   }
 }
